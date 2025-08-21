@@ -1,46 +1,52 @@
-## Customer Churn Prediction
+# Customer Churn Prediction
 
+Predict customer retention for a California telecommunications provider using machine learning.
 
+## 📌 Objective
+The goal of this project is to predict whether a customer will **churn**, **stay**, or **join** the company based on their demographics, location, tenure, and subscription services. Accurate churn prediction enables proactive retention efforts and better business decisions.
 
-## 📌 Problem Definition
-The `Customer Churn table` contains information on all `7,043` customers from a `Telecommunications company` in California in Q2 2022
+## 📊 Dataset
+- **Customer Churn table** – 7,043 customers with details about their demographics, location, tenure, subscription services, and quarterly status.
+- **Zip Code Population table** – population estimates for the California zip codes used in the Customer Churn table.
 
-Each record represents `one customer`, and contains details about their `demographics`, `location`, `tenure`, `subscription services`, `status for the quarter` `(joined, stayed, or churned)`, and more!
+## 🛠️ Installation
+Clone the repository and install the dependencies.
 
-The `Zip Code Population` table contains complimentary information on the estimated populations for the California zip codes in the Customer Churn table
+```bash
+git clone https://github.com/Pavankumarmanagoli/Customer-Churn-Prediction.git
+cd Customer-Churn-Prediction
 
-We need to `predict` whether the customer will `churn`, `stay` or `join` the company based on the parameters of the dataset.
-<br><br>
+# (Optional) create and activate a virtual environment
+python -m venv .venv
+source .venv/bin/activate  # On Windows use .venv\Scripts\activate
 
-## 👀 Screenshots
-
-<img src = "/assets/1.png">
-<img src = "/assets/2.png">
-<img src = "/assets/3.png">
-<img src = "/assets/4.png">
-
-
-## 📓 Overview
-
-| Machine Learning Models Applied            | Accuracy |
-| ----------------- | ------------------------------------------------------------------ |
-| Random Forest | 78.11% |
-| Logistic Regression | 78.28% |
-| Naive Bayes Gaussian | 36.77% |
-| Decision Tree | 77.29% |
-| XGB_Classifier | 80.86% |
-
-<br>
-
-## 👉 Application
-
-The ability to predict churn before it happens allows businesses to take proactive actions to keep existing customers from churning. This could look like: 
-```
-  Customer success teams reaching out to those high-risk customers to provide support or to gauge 
-  what needs may not be being met.
+# install required packages
+pip install -r requirements.txt
 ```
 
-The advantage of calculating a company's churn rate is that it provides clarity on how well the business is retaining customers, which is a reflection on the quality of the service the business is providing, as well as its usefulness.
+## 🚀 Usage
+Launch the Jupyter notebook to explore the dataset, train models and evaluate results.
+
+```bash
+jupyter notebook src/Customer_Churn_Prediction.ipynb
+```
+
+The notebook covers data preprocessing, model training for **Random Forest**, **Logistic Regression**, **Naive Bayes**, **Decision Tree**, and **XGBoost**, and evaluation metrics.
+
+## 📈 Model Performance
+| Model                  | Accuracy |
+|------------------------|---------:|
+| Random Forest          | 78.11%   |
+| Logistic Regression    | 78.28%   |
+| Naive Bayes Gaussian   | 36.77%   |
+| Decision Tree          | 77.29%   |
+| XGBClassifier          | 80.86%   |
+
+##  Screenshots
+<img src="/assets/1.png" alt="Exploratory Data Analysis" />
+<img src="/assets/2.png" alt="Model Training" />
+<img src="/assets/3.png" alt="Confusion Matrix" />
+<img src="/assets/4.png" alt="Feature Importance" />
 
 
 
