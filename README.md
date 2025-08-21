@@ -1,9 +1,17 @@
+
 # Customer Churn Prediction
 
-Predict customer retention for a California telecommunications provider using machine learning.
+Customer churn—the loss of existing subscribers—directly impacts a telecom company’s revenue. This repository presents an end-to-end machine-learning workflow that analyzes customer records to anticipate churn and guide retention strategies.
+
+## 📖 About the Project
+The project explores a public dataset of 7,043 California customers, performing exploratory analysis, feature engineering, and training several classification algorithms to uncover patterns behind customer loyalty.
 
 ## 📌 Objective
-The goal of this project is to predict whether a customer will **churn**, **stay**, or **join** the company based on their demographics, location, tenure, and subscription services. Accurate churn prediction enables proactive retention efforts and better business decisions.
+Develop a data-driven system to classify customers into **Churn**, **Stay**, or **Join** segments using demographics, location, tenure, and subscription data. The model helps the business:
+
+- flag high-risk customers before they leave,
+- understand which factors most influence churn,
+- design targeted marketing and retention campaigns.
 
 ## 📊 Dataset
 - **Customer Churn table** – 7,043 customers with details about their demographics, location, tenure, subscription services, and quarterly status.
@@ -42,7 +50,7 @@ The notebook covers data preprocessing, model training for **Random Forest**, **
 | Decision Tree          | 77.29%   |
 | XGBClassifier          | 80.86%   |
 
-##  Screenshots
+## 👀 Screenshots
 <img src="/assets/1.png" alt="Exploratory Data Analysis" />
 <img src="/assets/2.png" alt="Model Training" />
 <img src="/assets/3.png" alt="Confusion Matrix" />
